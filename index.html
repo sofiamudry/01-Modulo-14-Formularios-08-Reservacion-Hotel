@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Reservación</title>
+</head>
+<body>
+    <main class="center container">
+        <section class="center title-container">
+            <h1 class="title">MAKE YOUR RESERVATION</h1>
+            <p class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dolorum sint, eos doloribus laboriosam possimus quasi veniam, modi praesentium est quibusdam? Itaque, a! Nihil cupiditate delectus voluptate, laudantium est ullam.</p>
+        </section>
+        <section class="center form-container">
+            <form action="" class="center form">
+                <span class="center destination">
+                    <label for="destination">Your Destination</label>
+                    <input type="text" name="destination" id="destination" placeholder="Enter a destination or hotel name">
+                </span>
+                <span class="center check-in">
+                    <label for="check-in">Check In</label>
+                    <input type="date" id="check-in" min="2020-10-31" placeholder="dd/mm/aaaa" required>
+                </span>
+                <span class="center check-out">
+                    <label for="check-out">Check Out</label>
+                    <input type="date" id="check-out" min="2020-11-01" placeholder="dd/mm/aaaa" required>
+                </span>
+                <span class="center room">
+                    <label for="room">Rooms</label>
+                    <select name="room" id="room">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </span>
+                <span class="center adult">
+                    <label for="adult">Adults</label>
+                    <input type="number" id="adult" value="1" min="1" max="3">
+                </span>
+                <span class="center children">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" value="0" min="0" max="2">
+                </span>
+                <div class="availability">
+                    <input type="button" value="Check availability">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
